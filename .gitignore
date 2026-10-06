@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-app/
+
+# Environment variables (contains API keys!)
+.env
+
+# Uploaded user files (large binary, user-specific)
+uploads/
+
+# App data (user-specific runtime data)
+data/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Electron packager temp
+/out/

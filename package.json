@@ -1,0 +1,35 @@
+{
+  "name": "streamoverlay-pro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "node server/index.js",
+    "build": "vite build",
+    "test:backend": "node --test tests/backend-validation.test.js",
+    "app": "electron .",
+    "dist": "vite build && electron-packager . StreamOverlayPro --platform=win32 --arch=x64 --out=dist-app --overwrite --prune=true --ignore=\"^/src\" --ignore=\"^/.env\" --ignore=\"^/\\.git\" --ignore=\"^/dist-app\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "4.22.3",
+    "fs-extra": "^11.2.0",
+    "multer": "^1.4.5-lts.1",
+    "ws": "^8.18.0",
+    "youtube-chat": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.0.4",
+    "electron": "^43.4.1",
+    "electron-packager": "^17.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "vite": "^8.1.5"
+  }
+}
